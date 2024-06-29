@@ -8,7 +8,10 @@ public class Main {
         MagicSquare square = new MagicSquare(mySquare);
         System.out.println("sum of rows" + square.sumOfRows());
         System.out.println("sum of columns" + square.sumOfColumns());
+        System.out.println("sum of columns" + square.sumOfDiagonals());
     }
 }
+
+
 
 

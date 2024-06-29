@@ -35,6 +35,24 @@ public class MagicSquare {
         return result;
     }
 
+    public ArrayList<Integer> sumOfDiagonals() {
+        ArrayList<Integer> result = new ArrayList<>();
+        int firstDiagonalSum = 0;
+        int secondDiagonalSum = 0;
+        for (int i=0; i<this.square.length; i++) {
+            firstDiagonalSum += this.square[i][i];
+            secondDiagonalSum += this.square[i][this.square.length-i-1];
+        }
+
+        result.add(firstDiagonalSum);
+        result.add(secondDiagonalSum);
+        return result;
+    }
+
+
+
+
+
 
 
 
