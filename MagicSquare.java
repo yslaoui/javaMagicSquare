@@ -21,6 +21,20 @@ public class MagicSquare {
         return result;
     }
 
+    public ArrayList<Integer> sumOfColumns() {
+        ArrayList<Integer> result = new ArrayList<>();
+        int numberOfColumns =  this.square[0].length;
+        int numberOfRows = this.square.length;
+        for (int j=0; j< numberOfColumns; j++) {
+            int sum = 0;
+            for (int i=0; i<numberOfRows; i++) {
+                sum += this.square[i][j];
+            }
+            result.add(sum);
+        }
+        return result;
+    }
+
 
 
 
